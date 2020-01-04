@@ -4,4 +4,89 @@ $title-main: #ffffff;
 $title-secondary: #707070;
 $font-color: #9F9E9E;
 
+.navbar {
+  background-color: $main;
+  box-shadow: 0 5px 10px 0 $main;
 
+  .navbar-brand {
+    .brand-logo {
+      max-width: 3.75rem;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .nav-link {
+        color: $priority;
+      }
+
+      &.start-campaign {
+        border: 1px solid $priority;
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .form-inline {
+    .nav-search {
+      background-color: transparent;
+      border: 1px solid $priority;
+      border-radius: 25px;
+      width: 100%;
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 75%;
+      }
+
+      .form-control {
+        background-color: transparent;
+        border: none;
+        width: 80%;
+        color: $priority;
+
+        &::placeholder {
+          color: $priority;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .btn-search {
+        .fa-search {
+          color: $priority;
+          font-size: 1.2rem;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: $priority;
+    padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url(../images/menu.svg);
+    }
+  }
+}
