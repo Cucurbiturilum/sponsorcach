@@ -5,6 +5,7 @@ $title-secondary: #707070;
 $font-color: #9F9E9E;
 
 .navbar {
+  z-index: 5;
   background-color: $main;
   box-shadow: 0 5px 10px 0 $main;
 
