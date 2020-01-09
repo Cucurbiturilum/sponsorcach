@@ -1,2 +1,108 @@
 @import "style";
 
+.carousel {
+  font-family: $maim-font;
+  color: $title-main;
+  .carousel-indicators {
+    @media (max-width: 760px){
+      flex-direction: column;
+      margin-right: 0;
+      margin-left: 2%;
+      top: 0;
+      height: 100%;
+    }
+
+    li {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: $title-main;
+      opacity: 1;
+      margin-right: 1.2rem;
+      border: none;
+      @media (max-width: 760px) {
+        margin-bottom: 0.7rem;
+        margin-right: 0;
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+
+      &.active {
+        background-color: $main;
+      }
+    }
+  }
+
+  .carousel-item {
+    .underlay{
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      min-height: 853px;
+      position: absolute;
+      top: 0;
+    }
+    .carousel-caption{
+      height: 100%;
+      text-align: left;
+      left: 55%;
+      right: 10%;
+      padding: 0;
+      @media (max-width: 800px){
+        top: 0;
+      }
+      @media  (max-width: 1100px){
+        left: 10%;
+      }
+      h5{
+        font-weight: bold;
+        font-size: 2rem;
+        @media (max-width: 380px){
+          font-size: 0.8rem;
+        }
+        @media (min-width: 380px) and (max-width: 600px) {
+          font-size: 1rem;
+        }
+        @media (min-width: 600px) and (max-width: 800px) {
+          font-size: 1.5rem;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        @media (max-width: 380px){
+          font-size: 0.5rem;
+          margin-bottom: 0.1rem;
+        }
+        @media (min-width: 380px) and (max-width: 600px) {
+          font-size: 0.65rem;
+          margin-bottom: 0.3rem;
+        }
+        @media (min-width: 600px) and (max-width: 800px) {
+          font-size: 1rem;
+        }
+      }
+      .btn-explore{
+        color: $title-main;
+        border: 1px solid $title-main;
+        border-radius: 20px;
+        width: 33%;
+        @media (max-width: 380px){
+          font-size: 0.5rem;
+          padding: 0.3rem;
+        }
+        @media (min-width: 380px) and (max-width: 990px) {
+          font-size: 0.65rem;
+          padding: 0.2rem ;
+        }
+        &:focus{
+          box-shadow: none;
+        }
+        &:hover{
+          background-color: $priority;
+          border: 1px solid $priority;
+          color: $title-main;
+        }
+      }
+    }
+  }
+}
+

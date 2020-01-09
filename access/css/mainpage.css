@@ -1,7 +1,8 @@
 .navbar {
   z-index: 5;
   background-color: #7D73C3;
-  box-shadow: 0 5px 10px 0 #7D73C3;
+  box-shadow: 0 3px 10px 0 #707070;
+  font-family: open-sans, sans-serif;
 }
 .navbar .navbar-brand .brand-logo {
   max-width: 3.75rem;
@@ -62,6 +63,129 @@
 }
 .navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.svg);
+}
+
+.carousel {
+  font-family: open-sans, sans-serif;
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .carousel .carousel-indicators {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 2%;
+    top: 0;
+    height: 100%;
+  }
+}
+.carousel .carousel-indicators li {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 1;
+  margin-right: 1.2rem;
+  border: none;
+}
+@media (max-width: 760px) {
+  .carousel .carousel-indicators li {
+    margin-bottom: 0.7rem;
+    margin-right: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+.carousel .carousel-indicators li.active {
+  background-color: #7D73C3;
+}
+.carousel .carousel-item .underlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 853px;
+  position: absolute;
+  top: 0;
+}
+.carousel .carousel-item .carousel-caption {
+  height: 100%;
+  text-align: left;
+  left: 55%;
+  right: 10%;
+  padding: 0;
+}
+@media (max-width: 800px) {
+  .carousel .carousel-item .carousel-caption {
+    top: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .carousel .carousel-item .carousel-caption {
+    left: 10%;
+  }
+}
+.carousel .carousel-item .carousel-caption h5 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (max-width: 380px) {
+  .carousel .carousel-item .carousel-caption h5 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 380px) and (max-width: 600px) {
+  .carousel .carousel-item .carousel-caption h5 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .carousel .carousel-item .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+}
+.carousel .carousel-item .carousel-caption p {
+  font-size: 1.3rem;
+}
+@media (max-width: 380px) {
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
+}
+@media (min-width: 380px) and (max-width: 600px) {
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+.carousel .carousel-item .carousel-caption .btn-explore {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  width: 33%;
+}
+@media (max-width: 380px) {
+  .carousel .carousel-item .carousel-caption .btn-explore {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+@media (min-width: 380px) and (max-width: 990px) {
+  .carousel .carousel-item .carousel-caption .btn-explore {
+    font-size: 0.65rem;
+    padding: 0.2rem;
+  }
+}
+.carousel .carousel-item .carousel-caption .btn-explore:focus {
+  box-shadow: none;
+}
+.carousel .carousel-item .carousel-caption .btn-explore:hover {
+  background-color: #FFCA79;
+  border: 1px solid #FFCA79;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=mainpage.css.map */

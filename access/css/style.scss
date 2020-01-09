@@ -3,11 +3,13 @@ $priority: #FFCA79;
 $title-main: #ffffff;
 $title-secondary: #707070;
 $font-color: #9F9E9E;
+$maim-font: open-sans, sans-serif;
 
 .navbar {
   z-index: 5;
   background-color: $main;
-  box-shadow: 0 5px 10px 0 $main;
+  box-shadow: 0 3px 10px 0 $title-secondary;
+  font-family: $maim-font;
 
   .navbar-brand {
     .brand-logo {
