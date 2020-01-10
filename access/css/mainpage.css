@@ -97,6 +97,7 @@ footer {
   font-family: open-sans, sans-serif;
   background-color: #7D73C3;
   padding-top: 1.5rem;
+  box-shadow: 0 3px 10px 0 #707070;
 }
 footer .brand .brand-logo {
   max-width: 4rem;

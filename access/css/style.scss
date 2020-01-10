@@ -126,6 +126,7 @@ footer {
   font-family: $maim-font;
   background-color: $main;
   padding-top: 1.5rem;
+  box-shadow: 0 3px 10px 0 $title-secondary;
 
   .brand {
     .brand-logo {
