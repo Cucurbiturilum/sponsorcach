@@ -185,7 +185,29 @@
     top: 5%;
     left: 5%;
     width: 90%;
-
+    height: 30%;
+    text-align: right;
+    @media (min-width: 990px) and (max-width: 1200px) {
+      height: 25%;
+    }
+    @media (min-width: 530px) and (max-width: 766px) {
+      height: 45%;
+    }
+    @media (min-width: 370px) and (max-width: 530px) {
+      height: 33%;
+    }
+    @media (max-width: 370px) {
+      height: 27%;
+    }
+    .project-category {
+      color: $title-main;
+      font-size: 0.9rem;
+      padding: 0.2rem;
+      width: 7rem;
+      background-color: $priority;
+      border-radius: 20px;
+      text-align: center;
+    }
     .like {
       width: 2.5rem;
       height: 2.5rem;
@@ -296,16 +318,6 @@
         font-size: 1.5rem;
       }
 
-      .project-category {
-        color: $title-main;
-        font-size: 0.9rem;
-        padding: 0.2rem;
-        width: 7rem;
-        background-color: $priority;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 3px 6px 0 $priority;
-      }
     }
 
     .card-text {
