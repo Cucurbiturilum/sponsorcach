@@ -65,10 +65,38 @@
   background-image: url(../images/menu.svg);
 }
 
+.show-more {
+  font-family: open-sans, sans-serif;
+}
+.show-more .little-circle, .show-more .big-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #FFCA79;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.show-more .big-circle {
+  height: 30px;
+  width: 30px;
+}
+.show-more .btn-more {
+  background-color: #FFCA79;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 1rem;
+}
+.show-more .btn-more:focus {
+  box-shadow: none;
+}
+
 .carousel {
   font-family: open-sans, sans-serif;
   color: #ffffff;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 760px) {
   .carousel .carousel-indicators {
@@ -193,7 +221,7 @@
   font-family: open-sans, sans-serif;
 }
 .popular-campaigns .campaigns-title {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .popular-campaigns .campaigns-title h2 {
   color: #7D73C3;

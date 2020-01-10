@@ -3,7 +3,7 @@
 .carousel {
   font-family: $maim-font;
   color: $title-main;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 
   .carousel-indicators {
     @media (max-width: 760px) {
@@ -118,7 +118,7 @@
   font-family: $maim-font;
 
   .campaigns-title {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 
     h2 {
       color: $main;
@@ -361,3 +361,4 @@
     }
   }
 }
+

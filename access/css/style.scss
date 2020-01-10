@@ -93,3 +93,31 @@ $maim-font: open-sans, sans-serif;
     }
   }
 }
+
+.show-more {
+  font-family: $maim-font;
+  .little-circle, .big-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $priority;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .big-circle{
+    height: 30px;
+    width: 30px;
+  }
+  .btn-more{
+    background-color: $priority;
+    color: $title-main;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    border-radius: 50px;
+    height: 40px;
+    padding: 0 1rem;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
