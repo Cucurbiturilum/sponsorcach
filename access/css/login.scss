@@ -49,6 +49,15 @@ body {
       &:after {
         margin-left: 0.5rem;
       }
+      @media (max-width: 425px) {
+        &:before, &:after {
+          content: '';
+          display: inline-block;
+          border-top: 1px solid $main;
+          width: 40%;
+          padding-top: 0.3rem;
+        }
+      }
     }
 
     .form-group {
@@ -98,7 +107,7 @@ body {
 
     .form-footer{
       border-top: 1px solid $main;
-      color: $main;
+      color: $title-secondary;
       text-align: center;
       padding-top: 1rem;
       .orange{
