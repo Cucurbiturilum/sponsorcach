@@ -20,6 +20,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b48621f243.js" crossorigin="anonymous"></script>
+    <script src="access/js/main.js"></script>
 </head>
 <body>
 <header>
@@ -111,12 +112,12 @@
 </div>
 <div class="container popular-campaigns">
     <div class="row">
-        <div class="campaigns-title d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap w-100">
+        <div class="campaigns-title col-12 d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap w-100">
             <h2 class="d-inline-block">Popular Campaigns</h2>
             <div class="campaigns-category">
                 <button class="btn dropdown-toggle" type="button" id="categoryButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Architecture
+                    All
                 </button>
                 <div class="dropdown-menu" aria-labelledby="categoryButton">
                     <a class="dropdown-item" href="#">Architecture</a>
@@ -125,10 +126,19 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
                 <img src="access/images/campaigns/abstract-aluminum-architectural-architecture-210158.jpg"
                      class="card-img-top" alt="aluminum">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
                 <div class="card-body">
                     <div class="card-title d-flex justify-content-between align-items-center">
                         <p class="d-inline-block project-title text-uppercase font-weight-bold">duis at tellus</p>
@@ -149,6 +159,208 @@
                             </div>
                             <div class="goal d-inline-block text-center">
                                 <p class="font-weight-bold mb-0">50 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="access/images/campaigns/woman-wearing-animal-print-head-scarf-1038158.jpg"
+                     class="card-img-top" alt="woman-wearing">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">elit ullamcorper
+                            dignissim</p>
+                        <p class="d-inline-block project-category">Art</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.22 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">30 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="access/images/campaigns/fashion-woman-working-girl-34074.jpg"
+                     class="card-img-top" alt="fashion-woman">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">elit ullamcorper
+                            dignissim</p>
+                        <p class="d-inline-block project-category">Art</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.22 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">30 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="access/images/campaigns/blur-close-up-code-computer-546819.jpg"
+                     class="card-img-top" alt="blur-close">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">elit ullamcorper</p>
+                        <p class="d-inline-block project-category">Technology</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.22 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">30 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="access/images/campaigns/app-business-communication-connection-242492.jpg"
+                     class="card-img-top" alt="app">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">vulputate sapien nec</p>
+                        <p class="d-inline-block project-category">Mobile</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.22 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">30 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="access/images/campaigns/nature-sky-summer-grass-128202.jpg"
+                     class="card-img-top" alt="sky">
+                <div class="card-head d-flex justify-content-between">
+                    <p class="like"><i class="far fa-heart"></i></p>
+                    <div class="countdown">
+                        <div class="countdown-number"></div>
+                        <svg>
+                            <circle r="20" cx="25" cy="25"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">vulputate sapien nec</p>
+                        <p class="d-inline-block project-category">Sport</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.22 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">30 BCH</p>
                                 <p class="text-uppercase mb-0">goal</p>
                             </div>
                         </div>

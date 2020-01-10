@@ -134,6 +134,7 @@
         border-radius: 30px;
         color: $main;
         font-size: 1.3rem;
+        width: 12rem;
         @media (max-width: 800px) {
           font-size: 0.7rem;
         }
@@ -151,19 +152,20 @@
         .dropdown-item {
           color: $main;
           font-size: 1.3rem;
-          @media (max-width: 800px) {
-            font-size: 0.7rem;
+          background-color: transparent;
+
+          &:hover, &:focus, &:active {
+            color: #5E54A5;
+            background-color: transparent;
           }
 
-          &:active {
-            background-color: #fff;
+          @media (max-width: 800px) {
+            font-size: 0.7rem;
           }
         }
       }
     }
   }
-
-
 }
 
 .card {
@@ -171,14 +173,124 @@
   border-radius: 40px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   border: none;
+  position: relative;
 
   .card-img-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
   }
 
+  .card-head {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+
+    .like {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $main;
+      text-align: center;
+      padding-top: 0.5rem;
+
+      .far {
+        &.fa-heart {
+          color: $title-main;
+          font-size: 1.5rem;
+        }
+      }
+
+      .fas {
+        &.fa-heart {
+          color: $title-main;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    // timer
+
+    .countdown {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+
+      .countdown-number {
+        color: white;
+        display: inline-block;
+        line-height: 50px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        &:before {
+          content: "";
+          height: 15px;
+          border-right: 2px solid $title-secondary;
+          border-radius: 50%;
+          position: absolute;
+          left: calc(50% - 2px);
+          top: calc(50% - 15px);
+        }
+
+        &:after {
+          content: "";
+          width: 13px;
+          border-bottom: 2px solid $title-secondary;
+          border-radius: 50%;
+          position: absolute;
+          left: calc(50% - 2px);
+          top: calc(50% - 2px);
+        }
+      }
+
+      svg {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+        width: 50px;
+        height: 50px;
+        transform: rotateY(-180deg) rotateZ(-90deg);
+
+        circle {
+          stroke-dasharray: 113px;
+          stroke-dashoffset: 0;
+          stroke-width: 10px;
+          fill: none;
+
+        }
+      }
+
+      @keyframes countdown {
+        from {
+          stroke-dashoffset: 0;
+          stroke: #37D625;
+        }
+        25% {
+          stroke: #d6d400;
+        }
+        50% {
+          stroke: #d68800;
+        }
+        75% {
+          stroke: #d65400;
+        }
+        to {
+          stroke-dashoffset: 113px;
+          stroke: red;
+        }
+      }
+    }
+  }
+
   .card-body {
     .card-title {
+      height: 80px;
+      overflow: hidden;
+
       .project-title {
         color: $title-secondary;
         font-size: 1.5rem;
@@ -187,16 +299,18 @@
       .project-category {
         color: $title-main;
         font-size: 0.9rem;
-        padding: 0.2rem 0.5rem;
+        padding: 0.2rem;
+        width: 7rem;
         background-color: $priority;
         border-radius: 20px;
+        text-align: center;
         box-shadow: 0 3px 6px 0 $priority;
       }
     }
 
     .card-text {
       color: $font-color;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
     }
 
     .card-footer {
@@ -228,15 +342,18 @@
           width: 45%;
           color: $title-secondary;
           font-size: 1.125rem;
-          p:first-child{
+
+          p:first-child {
             font-size: 1.56rem;
           }
         }
+
         .goal {
           width: 45%;
           color: $font-color;
           font-size: 1.125rem;
-          p:first-child{
+
+          p:first-child {
             font-size: 1.56rem;
           }
         }
