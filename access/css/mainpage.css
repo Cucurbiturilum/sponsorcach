@@ -111,7 +111,10 @@ footer .brand .brand-name {
 footer .brand .brand-name span {
   color: #ffffff;
 }
-footer .footer-nav .footer-nav-link {
+footer .footer-nav li {
+  list-style-type: none;
+}
+footer .footer-nav li .footer-nav-link {
   color: #FFCA79;
   font-size: 1.2rem;
 }

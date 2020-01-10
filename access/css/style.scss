@@ -146,9 +146,12 @@ footer {
   }
 
   .footer-nav {
-    .footer-nav-link {
-      color: $priority;
-      font-size: 1.2rem;
+    li{
+      list-style-type: none;
+      .footer-nav-link {
+        color: $priority;
+        font-size: 1.2rem;
+      }
     }
   }
 
