@@ -93,6 +93,44 @@
   box-shadow: none;
 }
 
+footer {
+  font-family: open-sans, sans-serif;
+  background-color: #7D73C3;
+  padding-top: 1.5rem;
+}
+footer .brand .brand-logo {
+  max-width: 4rem;
+  display: block;
+  margin: auto;
+}
+footer .brand .brand-name {
+  margin-top: 1rem;
+  color: #FFCA79;
+  font-size: 1.5rem;
+}
+footer .brand .brand-name span {
+  color: #ffffff;
+}
+footer .footer-nav .footer-nav-link {
+  color: #FFCA79;
+  font-size: 1.2rem;
+}
+footer .btn-contact {
+  color: #FFCA79;
+  font-size: 1.2rem;
+  border: 1px solid #FFCA79;
+  border-radius: 30px;
+  padding: 0.3rem 2.5rem;
+  margin-bottom: 1.5rem;
+}
+footer .btn-contact:hover {
+  background-color: #FFCA79;
+  color: #ffffff;
+}
+footer .btn-contact:focus {
+  box-shadow: none;
+}
+
 .carousel {
   font-family: open-sans, sans-serif;
   color: #ffffff;
@@ -424,44 +462,6 @@
 }
 .card .card-body .card-footer .donations .goal p:first-child {
   font-size: 1.56rem;
-}
-
-footer {
-  font-family: open-sans, sans-serif;
-  background-color: #7D73C3;
-  padding-top: 1.5rem;
-}
-footer .brand .brand-logo {
-  max-width: 4rem;
-  display: block;
-  margin: auto;
-}
-footer .brand .brand-name {
-  margin-top: 1rem;
-  color: #FFCA79;
-  font-size: 1.5rem;
-}
-footer .brand .brand-name span {
-  color: #ffffff;
-}
-footer .footer-nav .footer-nav-link {
-  color: #FFCA79;
-  font-size: 1.2rem;
-}
-footer .btn-contact {
-  color: #FFCA79;
-  font-size: 1.2rem;
-  border: 1px solid #FFCA79;
-  border-radius: 30px;
-  padding: 0.3rem 2.5rem;
-  margin-bottom: 1.5rem;
-}
-footer .btn-contact:hover {
-  background-color: #FFCA79;
-  color: #ffffff;
-}
-footer .btn-contact:focus {
-  box-shadow: none;
 }
 
 /*# sourceMappingURL=mainpage.css.map */
