@@ -3,12 +3,14 @@ $priority: #FFCA79;
 $title-main: #ffffff;
 $title-secondary: #707070;
 $font-color: #9F9E9E;
+$body-color: rgba(156, 180, 247, 0.4);
+$cashId-color: #9CB4F7;
 $maim-font: open-sans, sans-serif;
 
 .navbar {
   z-index: 5;
   background-color: $main;
-  box-shadow: 0 3px 10px 0 $title-secondary;
+  box-shadow: 0 3px 6px 0 $main;
   font-family: $maim-font;
 
   .navbar-brand {
@@ -96,6 +98,7 @@ $maim-font: open-sans, sans-serif;
 
 .show-more {
   font-family: $maim-font;
+
   .little-circle, .big-circle {
     height: 20px;
     width: 20px;
@@ -104,11 +107,13 @@ $maim-font: open-sans, sans-serif;
     display: inline-block;
     margin-right: 1rem;
   }
-  .big-circle{
+
+  .big-circle {
     height: 30px;
     width: 30px;
   }
-  .btn-more{
+
+  .btn-more {
     background-color: $priority;
     color: $title-main;
     font-size: 1.3rem;
@@ -116,7 +121,8 @@ $maim-font: open-sans, sans-serif;
     border-radius: 50px;
     height: 40px;
     padding: 0 1rem;
-    &:focus{
+
+    &:focus {
       box-shadow: none;
     }
   }
@@ -126,7 +132,7 @@ footer {
   font-family: $maim-font;
   background-color: $main;
   padding-top: 1.5rem;
-  box-shadow: 0 3px 10px 0 $title-secondary;
+  box-shadow: 0 -2px 6px 0 $main;
 
   .brand {
     .brand-logo {
@@ -147,8 +153,9 @@ footer {
   }
 
   .footer-nav {
-    li{
+    li {
       list-style-type: none;
+
       .footer-nav-link {
         color: $priority;
         font-size: 1.2rem;
@@ -156,18 +163,20 @@ footer {
     }
   }
 
-  .btn-contact{
+  .btn-contact {
     color: $priority;
     font-size: 1.2rem;
     border: 1px solid $priority;
     border-radius: 30px;
     padding: 0.3rem 2.5rem;
     margin-bottom: 1.5rem;
-    &:hover{
+
+    &:hover {
       background-color: $priority;
       color: $title-main;
     }
-    &:focus{
+
+    &:focus {
       box-shadow: none;
     }
   }

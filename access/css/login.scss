@@ -1,0 +1,119 @@
+@import "style";
+
+body {
+  font-family: $maim-font;
+  background-color: $body-color;
+
+  .login {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: $title-main;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    h2 {
+      color: $priority;
+      font-size: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn-cashId {
+      width: 100%;
+      color: $title-main;
+      border-radius: 15px;
+      background-color: $cashId-color;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .separator {
+      color: $main;
+      text-align: center;
+
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        border-top: 1px solid $main;
+        width: 45%;
+        padding-top: 0.3rem;
+      }
+
+      &:before {
+        margin-right: 0.5rem;
+      }
+
+      &:after {
+        margin-left: 0.5rem;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      .form-control {
+        border-color: $main;
+        border-radius: 15px;
+        color: $main;
+        height: 2.5rem;
+
+        &::placeholder {
+          color: $main;
+        }
+      }
+
+      &.form-check {
+        color: $main;
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+
+        .form-check-input {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+
+        .form-check-link {
+          color: $main;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .btn-submit {
+      width: 100%;
+      color: $title-main;
+      border-radius: 15px;
+      background-color: $main;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .form-footer{
+      border-top: 1px solid $main;
+      color: $main;
+      text-align: center;
+      padding-top: 1rem;
+      .orange{
+        color: $priority;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .black{
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      a{
+        color: $main;
+      }
+    }
+  }
+}
