@@ -362,3 +362,49 @@
   }
 }
 
+footer {
+  font-family: $maim-font;
+  background-color: $main;
+  padding-top: 1.5rem;
+
+  .brand {
+    .brand-logo {
+      max-width: 4rem;
+      display: block;
+      margin: auto;
+    }
+
+    .brand-name {
+      margin-top: 1rem;
+      color: $priority;
+      font-size: 1.5rem;
+
+      span {
+        color: $title-main;
+      }
+    }
+  }
+
+  .footer-nav {
+    .footer-nav-link {
+      color: $priority;
+      font-size: 1.2rem;
+    }
+  }
+
+  .btn-contact{
+    color: $priority;
+    font-size: 1.2rem;
+    border: 1px solid $priority;
+    border-radius: 30px;
+    padding: 0.3rem 2.5rem;
+    margin-bottom: 1.5rem;
+    &:hover{
+      background-color: $priority;
+      color: $title-main;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
