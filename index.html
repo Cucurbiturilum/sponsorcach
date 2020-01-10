@@ -111,15 +111,50 @@
 </div>
 <div class="container popular-campaigns">
     <div class="row">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap w-100">
+        <div class="campaigns-title d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap w-100">
             <h2 class="d-inline-block">Popular Campaigns</h2>
-            <label>
-                <select class="custom-select">
-                    <option selected>Architecture</option>
-                    <option value="1">Art</option>
-                    <option value="2">Science</option>
-                </select>
-            </label>
+            <div class="campaigns-category">
+                <button class="btn dropdown-toggle" type="button" id="categoryButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Architecture
+                </button>
+                <div class="dropdown-menu" aria-labelledby="categoryButton">
+                    <a class="dropdown-item" href="#">Architecture</a>
+                    <a class="dropdown-item" href="#">Art</a>
+                    <a class="dropdown-item" href="#">Science</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="access/images/campaigns/abstract-aluminum-architectural-architecture-210158.jpg"
+                     class="card-img-top" alt="aluminum">
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <p class="d-inline-block project-title text-uppercase font-weight-bold">duis at tellus</p>
+                        <p class="d-inline-block project-category">Architecture</p>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Turpis tincidunt id aliquet risus.</p>
+                    <div class="card-footer">
+                        <p class="progress-value font-weight-bold">56%</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donations text-center">
+                            <div class="funded d-inline-block border-right text-center">
+                                <p class="font-weight-bold mb-0">0.12 BCH</p>
+                                <p class="text-uppercase mb-0">funded</p>
+                            </div>
+                            <div class="goal d-inline-block text-center">
+                                <p class="font-weight-bold mb-0">50 BCH</p>
+                                <p class="text-uppercase mb-0">goal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

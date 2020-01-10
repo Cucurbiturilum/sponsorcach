@@ -68,6 +68,7 @@
 .carousel {
   font-family: open-sans, sans-serif;
   color: #ffffff;
+  margin-bottom: 3rem;
 }
 @media (max-width: 760px) {
   .carousel .carousel-indicators {
@@ -186,6 +187,117 @@
   background-color: #FFCA79;
   border: 1px solid #FFCA79;
   color: #ffffff;
+}
+
+.popular-campaigns {
+  font-family: open-sans, sans-serif;
+}
+.popular-campaigns .campaigns-title {
+  margin-bottom: 3rem;
+}
+.popular-campaigns .campaigns-title h2 {
+  color: #7D73C3;
+  font-size: 2.3rem;
+}
+@media (max-width: 800px) {
+  .popular-campaigns .campaigns-title h2 {
+    font-size: 2rem;
+  }
+}
+.popular-campaigns .campaigns-title .campaigns-category .btn {
+  border: 1px solid #7D73C3;
+  border-radius: 30px;
+  color: #7D73C3;
+  font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+  .popular-campaigns .campaigns-title .campaigns-category .btn {
+    font-size: 0.7rem;
+  }
+}
+.popular-campaigns .campaigns-title .campaigns-category .btn:focus {
+  box-shadow: none;
+}
+.popular-campaigns .campaigns-title .campaigns-category .dropdown-menu {
+  border: 1px solid #7D73C3;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.popular-campaigns .campaigns-title .campaigns-category .dropdown-menu .dropdown-item {
+  color: #7D73C3;
+  font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+  .popular-campaigns .campaigns-title .campaigns-category .dropdown-menu .dropdown-item {
+    font-size: 0.7rem;
+  }
+}
+.popular-campaigns .campaigns-title .campaigns-category .dropdown-menu .dropdown-item:active {
+  background-color: #fff;
+}
+
+.card {
+  font-family: open-sans, sans-serif;
+  border-radius: 40px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.card .card-img-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.card .card-body .card-title .project-title {
+  color: #707070;
+  font-size: 1.5rem;
+}
+.card .card-body .card-title .project-category {
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #FFCA79;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 #FFCA79;
+}
+.card .card-body .card-text {
+  color: #9F9E9E;
+  font-size: 1.25rem;
+}
+.card .card-body .card-footer {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.card .card-body .card-footer .progress-value {
+  color: #9F9E9E;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.card .card-body .card-footer .progress {
+  border-radius: 10px;
+  height: 1.25rem;
+  background-color: #F7F7F7;
+}
+.card .card-body .card-footer .progress .progress-bar {
+  border-radius: 10px;
+  background-color: #91EDF6;
+  width: 56%;
+}
+.card .card-body .card-footer .donations .funded {
+  width: 45%;
+  color: #707070;
+  font-size: 1.125rem;
+}
+.card .card-body .card-footer .donations .funded p:first-child {
+  font-size: 1.56rem;
+}
+.card .card-body .card-footer .donations .goal {
+  width: 45%;
+  color: #9F9E9E;
+  font-size: 1.125rem;
+}
+.card .card-body .card-footer .donations .goal p:first-child {
+  font-size: 1.56rem;
 }
 
 /*# sourceMappingURL=mainpage.css.map */
