@@ -1,0 +1,85 @@
+@import "style";
+
+.profile {
+  font-family: $maim-font;
+  margin-bottom: 1.5rem;
+
+  .profile-card {
+    .avatar {
+      position: relative;
+      top: 2rem;
+      width: 12rem;
+      height: 12rem;
+      overflow: hidden;
+      margin: auto;
+      border-radius: 50%;
+      border: 1rem solid white;
+      box-shadow: 0 10px 10px -13px rgba(125, 115, 195, 0.2);
+
+      .card-img-top {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .card-body {
+      text-align: center;
+      padding-top: 3rem;
+      box-shadow: 0 3px 6px 0 rgba(125, 115, 195, 0.2);
+      border-radius: 40px;
+      background-color: #fff;
+
+      .name {
+        color: $main;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .username {
+        color: $cashId-color;
+        margin-bottom: 0;
+      }
+
+      .join {
+        color: $font-color;
+        font-size: 0.8rem;
+      }
+
+      .blog-link {
+        a {
+          color: $priority;
+          margin-bottom: 0;
+          font-size: 1.2rem;
+          text-decoration: underline;
+        }
+      }
+
+      .card-text {
+        color: $main;
+      }
+
+      .social {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid $main;
+        border-radius: 50%;
+        padding-top: 0.4rem;
+
+        i {
+          color: $main;
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          background-color: $priority;
+          border-color: $priority;
+
+          i {
+            color: $title-main;
+          }
+        }
+      }
+    }
+  }
+}
