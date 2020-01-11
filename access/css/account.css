@@ -399,10 +399,22 @@ footer .btn-contact:focus {
   width: 8rem;
   height: 8rem;
 }
+@media (max-width: 540px) {
+  .supporters .company-first-line {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 .supporters .company-second-line {
   overflow: hidden;
   width: 6rem;
   height: 6rem;
+}
+@media (max-width: 540px) {
+  .supporters .company-second-line {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 .supporters .btn-sponsor {
   display: block;
