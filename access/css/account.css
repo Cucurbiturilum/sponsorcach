@@ -328,7 +328,7 @@ footer .btn-contact:focus {
   margin: auto;
   border-radius: 50%;
   border: 1rem solid white;
-  box-shadow: 0 10px 10px -13px rgba(125, 115, 195, 0.2);
+  box-shadow: 0 10px 10px -13px rgba(0, 0, 0, 0.2);
 }
 .profile .profile-card .avatar .card-img-top {
   width: 100%;
@@ -337,7 +337,7 @@ footer .btn-contact:focus {
 .profile .profile-card .card-body {
   text-align: center;
   padding-top: 3rem;
-  box-shadow: 0 3px 6px 0 rgba(125, 115, 195, 0.2);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   background-color: #fff;
 }
@@ -381,6 +381,41 @@ footer .btn-contact:focus {
 }
 .profile .profile-card .card-body .social:hover i {
   color: #ffffff;
+}
+
+.supporters {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin-bottom: 1.5rem;
+}
+.supporters h2 {
+  color: #FFCA79;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+.supporters .company-first-line {
+  overflow: hidden;
+  width: 8rem;
+  height: 8rem;
+}
+.supporters .company-second-line {
+  overflow: hidden;
+  width: 6rem;
+  height: 6rem;
+}
+.supporters .btn-sponsor {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #FFCA79;
+  border-radius: 20px;
+  color: #FFCA79;
+  font-size: 1.5rem;
+  padding: 0.3rem 2rem;
+}
+.supporters .btn-sponsor:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=account.css.map */

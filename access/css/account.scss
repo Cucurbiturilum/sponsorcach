@@ -14,7 +14,7 @@
       margin: auto;
       border-radius: 50%;
       border: 1rem solid white;
-      box-shadow: 0 10px 10px -13px rgba(125, 115, 195, 0.2);
+      box-shadow: 0 10px 10px -13px rgba(0, 0, 0, 0.2);
 
       .card-img-top {
         width: 100%;
@@ -25,7 +25,7 @@
     .card-body {
       text-align: center;
       padding-top: 3rem;
-      box-shadow: 0 3px 6px 0 rgba(125, 115, 195, 0.2);
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
       border-radius: 40px;
       background-color: #fff;
 
@@ -80,6 +80,46 @@
           }
         }
       }
+    }
+  }
+}
+
+.supporters {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    color: $priority;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .company-first-line {
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .company-second-line {
+    overflow: hidden;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .btn-sponsor {
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid $priority;
+    border-radius: 20px;
+    color: $priority;
+    font-size: 1.5rem;
+    padding: 0.3rem 2rem;
+
+    &:focus {
+      box-shadow: none;
     }
   }
 }
