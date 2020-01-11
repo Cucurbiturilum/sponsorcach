@@ -15,6 +15,7 @@
       border-radius: 50%;
       border: 1rem solid white;
       box-shadow: 0 10px 10px -13px rgba(0, 0, 0, 0.2);
+      z-index: 2;
 
       .card-img-top {
         width: 100%;
@@ -82,6 +83,79 @@
       }
     }
   }
+
+  &.public {
+    margin-top: 1.5rem;
+    .card-footer {
+      margin-top: 1.5rem;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+
+      .donations {
+        .funded {
+          width: 45%;
+          color: $title-secondary;
+          font-size: 1.125rem;
+
+          p:first-child {
+            font-size: 1.56rem;
+          }
+        }
+
+        .goal {
+          width: 45%;
+          color: $font-color;
+          font-size: 1.125rem;
+
+          p:first-child {
+            font-size: 1.56rem;
+          }
+        }
+      }
+    }
+    @media(min-width: 990px) {
+      .avatar {
+        z-index: 2;
+        top: calc(50% - 6rem);
+        left: 2rem;
+        box-shadow: 10px 0 10px -14px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-body {
+        padding-top: 1.25rem;
+        padding-left: 4rem;
+        .social-group,.bio{
+          text-align: left;
+        }
+        .card-footer {
+          width: 60%;
+
+          .donations {
+            .funded {
+              width: 45%;
+              color: $title-secondary;
+              font-size: 1.125rem;
+
+              p:first-child {
+                font-size: 1.56rem;
+              }
+            }
+
+            .goal {
+              width: 45%;
+              color: $font-color;
+              font-size: 1.125rem;
+
+              p:first-child {
+                font-size: 1.56rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .supporters {
@@ -100,7 +174,7 @@
     overflow: hidden;
     width: 8rem;
     height: 8rem;
-    @media (max-width: 540px){
+    @media (max-width: 540px) {
       width: 5rem;
       height: 5rem;
     }
@@ -110,7 +184,7 @@
     overflow: hidden;
     width: 6rem;
     height: 6rem;
-    @media (max-width: 540px){
+    @media (max-width: 540px) {
       width: 3rem;
       height: 3rem;
     }

@@ -329,6 +329,7 @@ footer .btn-contact:focus {
   border-radius: 50%;
   border: 1rem solid white;
   box-shadow: 0 10px 10px -13px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 .profile .profile-card .avatar .card-img-top {
   width: 100%;
@@ -381,6 +382,65 @@ footer .btn-contact:focus {
 }
 .profile .profile-card .card-body .social:hover i {
   color: #ffffff;
+}
+.profile.public {
+  margin-top: 1.5rem;
+}
+.profile.public .card-footer {
+  margin-top: 1.5rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.profile.public .card-footer .donations .funded {
+  width: 45%;
+  color: #707070;
+  font-size: 1.125rem;
+}
+.profile.public .card-footer .donations .funded p:first-child {
+  font-size: 1.56rem;
+}
+.profile.public .card-footer .donations .goal {
+  width: 45%;
+  color: #9F9E9E;
+  font-size: 1.125rem;
+}
+.profile.public .card-footer .donations .goal p:first-child {
+  font-size: 1.56rem;
+}
+@media (min-width: 990px) {
+  .profile.public .avatar {
+    z-index: 2;
+    top: calc(50% - 6rem);
+    left: 2rem;
+    box-shadow: 10px 0 10px -14px rgba(0, 0, 0, 0.2);
+  }
+  .profile.public .card-body {
+    padding-top: 1.25rem;
+    padding-left: 4rem;
+  }
+  .profile.public .card-body .social-group, .profile.public .card-body .bio {
+    text-align: left;
+  }
+  .profile.public .card-body .card-footer {
+    width: 60%;
+  }
+  .profile.public .card-body .card-footer .donations .funded {
+    width: 45%;
+    color: #707070;
+    font-size: 1.125rem;
+  }
+  .profile.public .card-body .card-footer .donations .funded p:first-child {
+    font-size: 1.56rem;
+  }
+  .profile.public .card-body .card-footer .donations .goal {
+    width: 45%;
+    color: #9F9E9E;
+    font-size: 1.125rem;
+  }
+  .profile.public .card-body .card-footer .donations .goal p:first-child {
+    font-size: 1.56rem;
+  }
 }
 
 .supporters {
