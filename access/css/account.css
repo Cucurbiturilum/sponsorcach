@@ -387,6 +387,22 @@ footer .btn-contact:focus {
 .profile.public {
   margin-top: 1.5rem;
 }
+.profile.public .btn-edit {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border: 1px solid #FFCA79;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+.profile.public .btn-edit:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 202, 121, 0.5);
+}
+.profile.public .btn-edit i {
+  color: #FFCA79;
+}
 .profile.public .card-footer {
   margin-top: 1.5rem;
   padding: 0;
@@ -417,7 +433,8 @@ footer .btn-contact:focus {
     box-shadow: 10px 0 10px -14px rgba(0, 0, 0, 0.2);
   }
   .profile.public .card-body {
-    padding-top: 1.25rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
     padding-left: 4rem;
   }
   .profile.public .card-body .social-group, .profile.public .card-body .bio {
