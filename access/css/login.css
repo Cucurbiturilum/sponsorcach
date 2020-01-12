@@ -207,41 +207,42 @@
   color: #9F9E9E;
   font-size: 1.15rem;
 }
-.card .card-body .card-footer {
+
+.card-footer {
   padding: 0;
   border: none;
   background-color: transparent;
 }
-.card .card-body .card-footer .progress-value {
+.card-footer .progress-value {
   color: #9F9E9E;
   text-align: center;
   font-size: 1rem;
   margin-bottom: 0;
 }
-.card .card-body .card-footer .progress {
+.card-footer .progress {
   border-radius: 10px;
   height: 1.25rem;
   background-color: #F7F7F7;
 }
-.card .card-body .card-footer .progress .progress-bar {
+.card-footer .progress .progress-bar {
   border-radius: 10px;
   background-color: #91EDF6;
   width: 56%;
 }
-.card .card-body .card-footer .donations .funded {
+.card-footer .donations .funded {
   width: 45%;
   color: #707070;
   font-size: 1.125rem;
 }
-.card .card-body .card-footer .donations .funded p:first-child {
+.card-footer .donations .funded p:first-child {
   font-size: 1.56rem;
 }
-.card .card-body .card-footer .donations .goal {
+.card-footer .donations .goal {
   width: 45%;
   color: #9F9E9E;
   font-size: 1.125rem;
 }
-.card .card-body .card-footer .donations .goal p:first-child {
+.card-footer .donations .goal p:first-child {
   font-size: 1.56rem;
 }
 

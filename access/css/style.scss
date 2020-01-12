@@ -253,55 +253,54 @@ $maim-font: open-sans, sans-serif;
       font-size: 1.15rem;
     }
 
-    .card-footer {
-      padding: 0;
-      border: none;
-      background-color: transparent;
+  }
+}
+.card-footer {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
-      .progress-value {
-        color: #9F9E9E;
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 0;
+  .progress-value {
+    color: #9F9E9E;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .progress {
+    border-radius: 10px;
+    height: 1.25rem;
+    background-color: #F7F7F7;
+
+    .progress-bar {
+      border-radius: 10px;
+      background-color: #91EDF6;
+      width: 56%;
+    }
+  }
+
+  .donations {
+    .funded {
+      width: 45%;
+      color: $title-secondary;
+      font-size: 1.125rem;
+
+      p:first-child {
+        font-size: 1.56rem;
       }
+    }
 
-      .progress {
-        border-radius: 10px;
-        height: 1.25rem;
-        background-color: #F7F7F7;
+    .goal {
+      width: 45%;
+      color: $font-color;
+      font-size: 1.125rem;
 
-        .progress-bar {
-          border-radius: 10px;
-          background-color: #91EDF6;
-          width: 56%;
-        }
-      }
-
-      .donations {
-        .funded {
-          width: 45%;
-          color: $title-secondary;
-          font-size: 1.125rem;
-
-          p:first-child {
-            font-size: 1.56rem;
-          }
-        }
-
-        .goal {
-          width: 45%;
-          color: $font-color;
-          font-size: 1.125rem;
-
-          p:first-child {
-            font-size: 1.56rem;
-          }
-        }
+      p:first-child {
+        font-size: 1.56rem;
       }
     }
   }
 }
-
 .show-more {
   font-family: $maim-font;
 

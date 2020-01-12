@@ -207,41 +207,42 @@
   color: #9F9E9E;
   font-size: 1.15rem;
 }
-.card .card-body .card-footer {
+
+.card-footer {
   padding: 0;
   border: none;
   background-color: transparent;
 }
-.card .card-body .card-footer .progress-value {
+.card-footer .progress-value {
   color: #9F9E9E;
   text-align: center;
   font-size: 1rem;
   margin-bottom: 0;
 }
-.card .card-body .card-footer .progress {
+.card-footer .progress {
   border-radius: 10px;
   height: 1.25rem;
   background-color: #F7F7F7;
 }
-.card .card-body .card-footer .progress .progress-bar {
+.card-footer .progress .progress-bar {
   border-radius: 10px;
   background-color: #91EDF6;
   width: 56%;
 }
-.card .card-body .card-footer .donations .funded {
+.card-footer .donations .funded {
   width: 45%;
   color: #707070;
   font-size: 1.125rem;
 }
-.card .card-body .card-footer .donations .funded p:first-child {
+.card-footer .donations .funded p:first-child {
   font-size: 1.56rem;
 }
-.card .card-body .card-footer .donations .goal {
+.card-footer .donations .goal {
   width: 45%;
   color: #9F9E9E;
   font-size: 1.125rem;
 }
-.card .card-body .card-footer .donations .goal p:first-child {
+.card-footer .donations .goal p:first-child {
   font-size: 1.56rem;
 }
 
@@ -488,6 +489,126 @@ footer .btn-contact:focus {
 }
 .supporters .btn-sponsor:focus {
   box-shadow: none;
+}
+
+.user-projects {
+  font-family: open-sans, sans-serif;
+}
+.user-projects h2 {
+  color: #7d73c3;
+  margin-bottom: 1.5rem;
+}
+.user-projects .project {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+.user-projects .project .project-img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-right: 1.5rem;
+}
+.user-projects .project .project-img img {
+  width: 100%;
+  height: 100%;
+}
+.user-projects .project .project-title {
+  color: #707070;
+  font-size: 1.2rem;
+}
+.user-projects .project .project-category {
+  color: #ffffff;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  width: 5rem;
+  background-color: #FFCA79;
+  border-radius: 20px;
+  text-align: center;
+}
+.user-projects .project .card-footer {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.user-projects .project .card-footer .donations .funded {
+  color: #707070;
+  font-size: 0.8rem;
+  padding-right: 3rem;
+}
+.user-projects .project .card-footer .donations .funded p:first-child {
+  font-size: 1.1rem;
+}
+.user-projects .project .card-footer .donations .goal {
+  color: #9F9E9E;
+  font-size: 0.8rem;
+  padding-left: 3rem;
+}
+.user-projects .project .card-footer .donations .goal p:first-child {
+  font-size: 1.1rem;
+}
+.user-projects .project .countdown-timer {
+  background-color: #F7F7F7;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+.user-projects .project .countdown-timer li {
+  display: inline-block;
+  font-size: 1.1rem;
+  list-style-type: none;
+}
+.user-projects .project .countdown-timer li span {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.user-projects .project .countdown-timer li span.days, .user-projects .project .countdown-timer li span.hours {
+  color: #707070;
+}
+.user-projects .project .countdown-timer li span.minutes, .user-projects .project .countdown-timer li span.seconds {
+  color: #9F9E9E;
+}
+.user-projects .project .countdown-timer p {
+  color: #707070;
+  font-size: 1rem;
+}
+.user-projects .project .close-project .btn-close:focus {
+  box-shadow: none;
+}
+.user-projects .project .close-project .btn-close img {
+  width: 2rem;
+}
+.user-projects .project.closed .countdown-timer {
+  visibility: hidden;
+}
+
+.user-donations h2 {
+  color: #7d73c3;
+  margin-bottom: 1.5rem;
+}
+.user-donations .project-preview {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+.user-donations .project-preview .project-donation-img {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+}
+.user-donations .project-preview .project-donation-img img {
+  width: 100%;
+  height: 100%;
+}
+.user-donations .project-preview .project-title {
+  color: #707070;
+  font-size: 1.2rem;
+}
+.user-donations .project-preview .funded {
+  color: #9F9E9E;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=account.css.map */
