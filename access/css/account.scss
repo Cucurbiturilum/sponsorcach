@@ -96,10 +96,12 @@
       width: 2rem;
       height: 2rem;
       padding: 0;
-      &:focus{
+
+      &:focus {
         box-shadow: 0 0 0 0.2rem rgb(255, 202, 121, 0.5);
       }
-      i{
+
+      i {
         color: $priority;
       }
     }
@@ -348,6 +350,7 @@
 }
 
 .user-donations {
+  font-family: $maim-font;
   h2 {
     color: $main;
     margin-bottom: 1.5rem;
@@ -376,11 +379,57 @@
       font-size: 1.2rem;
     }
 
+    .project-category {
+      color: $title-main;
+      font-size: 0.7rem;
+      padding: 0.2rem;
+      width: 5rem;
+      background-color: $priority;
+      border-radius: 20px;
+      text-align: center;
+    }
+
     .funded {
       color: $font-color;
       font-size: 1.1rem;
     }
-
   }
+}
 
+.user-sponsored {
+  font-family: $maim-font;
+  h2 {
+    color: $main;
+    margin-bottom: 1.5rem;
+  }
+  .sponsored-card {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    .username{
+      color: $cashId-color;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    .tier{
+      color: $priority;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    .subscription{
+      color: $font-color;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    .calendar{
+      color: $maim-font;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      span{
+        color: $main;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
