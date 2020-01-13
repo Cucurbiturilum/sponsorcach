@@ -1,0 +1,111 @@
+@import "style";
+
+.supporters {
+  font-family: $maim-font;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+
+  h2 {
+    color: $priority;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    @media (max-width: 425px){
+      font-size: 1.7rem;
+    }
+  }
+
+  .project-preview{
+    margin-bottom: 1.5rem;
+    .project-img{
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+      padding: 0;
+      img{
+        width: 100%;
+      }
+    }
+    .project-title{
+      color: $title-secondary;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      @media (max-width: 425px){
+        font-size: 1.7rem;
+      }
+    }
+    .project-description{
+      color: $font-color;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .companies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    .company-first-line {
+      overflow: hidden;
+      width: 8rem;
+      height: 8rem;
+      @media (max-width: 540px) {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    .company-second-line {
+      overflow: hidden;
+      width: 6rem;
+      height: 6rem;
+      @media (max-width: 540px) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  .btn-sponsor {
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid $priority;
+    border-radius: 20px;
+    color: $priority;
+    font-size: 1.5rem;
+    padding: 0.3rem 2rem;
+    @media (max-width: 425px){
+      font-size: 1rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .powered-link{
+    margin-top: 1.5rem;
+    color: $main;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    span:first-of-type{
+      text-transform: uppercase;
+      color: $priority;
+      font-weight: bold;
+    }
+    span:last-of-type{
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
