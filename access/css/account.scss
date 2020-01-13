@@ -299,36 +299,6 @@
       }
     }
 
-    .countdown-timer {
-      background-color: #F7F7F7;
-      border-radius: 15px;
-      padding: 0.5rem;
-
-      li {
-        display: inline-block;
-        font-size: 1.1rem;
-        list-style-type: none;
-
-        span {
-          margin: 0 0.5rem;
-          font-weight: bold;
-
-          &.days, &.hours {
-            color: $title-secondary;
-          }
-
-          &.minutes, &.seconds {
-            color: $font-color;
-          }
-        }
-      }
-
-      p {
-        color: $title-secondary;
-        font-size: 1rem;
-      }
-    }
-
     .close-project {
       .btn-close {
         &:focus {

@@ -127,6 +127,7 @@ $maim-font: open-sans, sans-serif;
     @media (max-width: 370px) {
       height: 27%;
     }
+
     .project-category {
       color: $title-main;
       font-size: 0.9rem;
@@ -136,6 +137,7 @@ $maim-font: open-sans, sans-serif;
       border-radius: 20px;
       text-align: center;
     }
+
     .like {
       width: 2.5rem;
       height: 2.5rem;
@@ -255,6 +257,7 @@ $maim-font: open-sans, sans-serif;
 
   }
 }
+
 .card-footer {
   padding: 0;
   border: none;
@@ -301,6 +304,7 @@ $maim-font: open-sans, sans-serif;
     }
   }
 }
+
 .show-more {
   font-family: $maim-font;
 
@@ -330,6 +334,36 @@ $maim-font: open-sans, sans-serif;
     &:focus {
       box-shadow: none;
     }
+  }
+}
+
+.countdown-timer {
+  background-color: #F7F7F7;
+  border-radius: 15px;
+  padding: 0.5rem;
+
+  li {
+    display: inline-block;
+    font-size: 1.1rem;
+    list-style-type: none;
+
+    span {
+      margin: 0 0.5rem;
+      font-weight: bold;
+
+      &.days, &.hours {
+        color: $title-secondary;
+      }
+
+      &.minutes, &.seconds {
+        color: $font-color;
+      }
+    }
+  }
+
+  p {
+    color: $title-secondary;
+    font-size: 1rem;
   }
 }
 

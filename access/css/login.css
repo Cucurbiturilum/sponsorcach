@@ -274,6 +274,31 @@
   box-shadow: none;
 }
 
+.countdown-timer {
+  background-color: #F7F7F7;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+.countdown-timer li {
+  display: inline-block;
+  font-size: 1.1rem;
+  list-style-type: none;
+}
+.countdown-timer li span {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.countdown-timer li span.days, .countdown-timer li span.hours {
+  color: #707070;
+}
+.countdown-timer li span.minutes, .countdown-timer li span.seconds {
+  color: #9F9E9E;
+}
+.countdown-timer p {
+  color: #707070;
+  font-size: 1rem;
+}
+
 footer {
   font-family: open-sans, sans-serif;
   background-color: #7d73c3;
