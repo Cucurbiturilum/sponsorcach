@@ -1,0 +1,50 @@
+@import "style";
+
+body {
+  font-family: $maim-font;
+  background-color: $body-color;
+
+  .contact {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: $title-main;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    h2 {
+      color: $priority;
+      font-size: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      .form-control {
+        border-color: $main;
+        border-radius: 15px;
+        color: $main;
+        height: 2.5rem;
+
+        &::placeholder {
+          color: $main;
+        }
+        &.textarea{
+          height: 10rem;
+        }
+      }
+    }
+
+    .btn-submit {
+      width: 100%;
+      color: $title-main;
+      border-radius: 15px;
+      background-color: $priority;
+      font-size: 1.1rem;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

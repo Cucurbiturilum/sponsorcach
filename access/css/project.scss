@@ -108,18 +108,18 @@
 
 .project-nav {
   border-top: 1px solid #D8D4D4;
-  box-shadow: inset 0 13px 6px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 13px 6px -10px rgba(125, 115, 195, 0.2);
   font-family: $maim-font;
 
   #details, #sponsors, #feedback {
-    color: $title-secondary;
+    color: $main;
     margin-right: 4rem;
     border-top: 2px solid transparent;
     cursor: pointer;
 
     &.active {
       font-weight: bold;
-      border-top: 2px solid $title-secondary;
+      border-top: 2px solid $main;
     }
 
     @media (max-width: 960px) {
