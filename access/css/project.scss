@@ -109,11 +109,13 @@
 .project-nav {
   border-top: 1px solid #D8D4D4;
   box-shadow: inset 0 13px 6px -10px rgba(0, 0, 0, 0.2);
+  font-family: $maim-font;
 
   #details, #sponsors, #feedback {
     color: $title-secondary;
     margin-right: 4rem;
     border-top: 2px solid transparent;
+    cursor: pointer;
 
     &.active {
       font-weight: bold;
@@ -159,11 +161,65 @@
       font-size: 1rem;
       margin-bottom: 0.5rem;
     }
+
     .sponsor-donation {
       color: $title-secondary;
       font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 0;
+    }
+  }
+
+  .feedback {
+    background-color: #F7F7F7;
+    border: 1px solid #D8D4D4;
+
+    .form-group {
+      .form-control {
+        height: 4rem;
+        border-radius: 20px;
+
+        &:focus {
+          box-shadow: none;
+          border-color: #D8D4D4;
+        }
+      }
+    }
+
+    .btn-send {
+      background-color: $priority;
+      border-radius: 20px;
+      min-width: 10rem;
+      color: $title-main;
+      padding: 0.2rem 0;
+    }
+
+    .message-card {
+      border-radius: 20px;
+      border: 1px solid #D8D4D4;
+      background-color: #fff;
+
+      .useravatar {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .username {
+        font-size: 0.8rem;
+        color: $main;
+
+        small {
+          font-size: 0.7rem;
+          color: $font-color;
+        }
+      }
+      .message{
+        color: $font-color;
+        font-size: 0.8rem;
+        padding: 0 15px;
+      }
     }
   }
 }
